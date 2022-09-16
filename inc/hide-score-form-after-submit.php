@@ -3,8 +3,8 @@
 
 add_filter( 'the_content', 'untp_submitted_form_check',1);
 function untp_submitted_form_check($content){
-	//This is only relevant to users who are logged in so
-    if(!is_user_logged_in()) return $content;
+	//This is only relevant to users who are logged and the account page
+    if(!is_user_logged_in() || get_the_ID() != UNTP_ACCOUNT_PAGE_ID) return $content;
 
     $current_user = wp_get_current_user();//The curent user    
     $date = strtotime(current_time( 'mysql' ). ' -1 year'); //Today minus one year 
