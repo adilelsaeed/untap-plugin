@@ -26,9 +26,12 @@ function untp_login()
 	    	<?php  
 	    }
 	    else{ // redirect logged in user to account page
-	     	$account_page_url = get_permalink(UNTP_ACCOUNT_PAGE_ID); 
-	     	wp_redirect($account_page_url);
-	     	exit();
+	    	if(!is_admin()){ // skip redirect on admin dashboard
+	    		$account_page_url = get_permalink(UNTP_ACCOUNT_PAGE_ID); 
+		     	wp_redirect($account_page_url);
+		     	exit();
+	    	}
+	     	
 	    } 
 	   
 	} 

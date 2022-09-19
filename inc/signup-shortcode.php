@@ -8,9 +8,11 @@ function untp_signup()
 	$account_page_url = get_permalink(UNTP_ACCOUNT_PAGE_ID); 
 	//Check whether the user is already logged in  
 	if ($user_ID){  
-	    // They're already logged in, redirect them to account page.  
-     	wp_redirect($account_page_url);
-     	exit();  
+	    // They're already logged in, redirect them to account page. 
+	    if(!is_admin()){ // skip redirect on admin dashboard 
+	     	wp_redirect($account_page_url);
+	     	exit();  
+     	}
 	   
 	} 
 	else{  
