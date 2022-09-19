@@ -15,9 +15,9 @@ This plugin do the following tasks assuming Gravity form installed and Score for
 ## Full Project:
 
 How to install
-1- Download site export file
-2- Install [LocalWP](https://localwp.com/)
-3- Import downloaded file
+ 1. Download site export from here
+ 2. Install [LocalWP](https://localwp.com/)
+ 3. Import downloaded file
 You can also use any other local development enviroment but you will need to edit current site URL (untap.local) with your intened URL (you can use [this tool](https://github.com/interconnectit/Search-Replace-DB))
 
 ### Admin User 
