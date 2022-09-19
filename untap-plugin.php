@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name: Untap Plugin
+ * Plugin Name: Untap Assignment Plugin
  * Plugin URI: https://untap.tech/
  * Description: Senior Wordpress Developer assignment.
  * Version: 0.0.1
  * Author: Adil Elsaeed
- * Author URI: https://www.linkedin.com/in/adilelsaeed/
+ * Author URI: https://www.adilelsaeed.com
  * Text Domain: untap
  * Domain Path: /i18n/languages/
  * Requires at least: 6.0
